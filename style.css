@@ -58,3 +58,22 @@ body main {
 h2 {
 	font-size:43px;
 }
+ @keyframes gradient {
+ 	0% {
+ 		background-position: 0 50%
+ 	}
+ 	50% {
+ 		background-position: 100% 50%;
+ 	}
+ 	100% {
+ 		background-position: 0 50% 
+ 	}
+ }
+ body,main {
+ 	margin: 0;
+    text-align:left;
+ 	background:linear-gradient(-45deg,#6441A5,#2a0845 );
+ 	background-size:400% 400%;
+    animation: gradient 10s ease infinite;
+    font-size: 17px;
+ }
